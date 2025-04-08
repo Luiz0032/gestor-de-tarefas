@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Utilitários personalizados */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-semibold transition;
+  }
+
+  .btn-primary {
+    @apply btn bg-blue-500 text-white hover:bg-blue-600;
+  }
+
+  .btn-secondary {
+    @apply btn bg-gray-200 text-gray-700 hover:bg-gray-300;
+  }
+
+  .card {
+    @apply bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition;
+  }
+}
